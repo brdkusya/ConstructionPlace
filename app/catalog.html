@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<base href="/">
+
+	<title>SEDONA</title>
+	<meta name="description" content="Сайт о туризме">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+
+	<meta name="theme-color" content="#000">
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<header id="header" class="header">
+		<nav class="navigation">
+			<a href="index.html" class="header-logo">
+				<img src="img/logotyle.png" width="111" height="24" alt="alt">
+			</a>
+			<ul class="header-menu">
+				<li>
+					<a href="info.html">Информация</a>
+				</li>
+				<li>
+					<a href="photovideo.html">Фото и видео</a>
+				</li>
+				<li>
+					<a href="map.html">Карта штата</a>
+				</li>
+				<li class="active">
+					<a href="catalog.html">Гостиницы</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main class="container">
+		<h1 class="visually-hidden">Каталог</h1>
+
+		<section class="filters">
+			<h2 class="visually-hidden">Фильтр гостиниц</h2>
+			<form class="filter" metod="get">
+				<fieldset>
+					<legend>Инфраструктура:</legend>
+					<ul>
+						<li class="filters-options">
+							<input class="visualli-hidden filter-input filter-input-checkbox" type="checkbox" name="Бассейн" id="filter-infr-b">
+							<span></span>
+							<label for="filter-infr" checked>Бассейн</label>
+						</li>
+						<li class="filters-options">
+							<input class="visualli-hidden filter-input filter-input-checkbox" type="checkbox" name="Парковка" id="filter-infr-p">
+							<span></span>
+							<label for="filter-infr">Парковка</label>
+						</li>
+						<li class="filters-options">
+							<input class="visualli-hidden filter-input filter-input-checkbox" type="checkbox" name="Wi-fi" id="filter-infr-w">
+							<span></span>
+							<label for="filter-infr">Wi-fi</label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Тип жилья:</legend>
+					<ul>
+						<li>
+							<input class="visualli-hidden filter-input filter-input-checkbox" type="checkbox" name="Гостиницы" id="filter-type-g">
+							<span></span>
+							<label for="filter-type" checked>Гостиницы</label>
+						</li>
+						<li>
+							<input class="visualli-hidden filter-input filter-input-checkbox" type="checkbox" name="Мотель" id="filter-type-m">
+							<span></span>
+							<label for="filter-type" checked>Мотель</label>
+						</li>
+						<li>
+							<input class="visualli-hidden filter-input filter-input-checkbox" type="checkbox" name="Апартаменты" id="filter-type-a">
+							<span></span>
+							<label for="filter-type" checked>Апартаменты</label>
+						</li>
+					</ul>
+				</fieldset>
+			</form>
+		</section>
+
+		<section class="options">
+			<h2 class="visually-hidden">Опции поиска</h2>
+			<p class="options-find">Найдено:
+				<span>3</span>
+			</p>
+			<p class="options-options">Сортировка:</p>
+			<ul class="options-list">
+				<li class="options-item active">
+					<a href="#">По цене</a>
+				</li>
+				<li class="options-item">
+					<a href="#">По типу</a>
+				</li>
+				<li class="options-item">
+					<a href="#">По рейтингу</a>
+				</li>
+			</ul>
+			<p class="options-sort">
+				<a href="#">По возрастанию</a>
+				<a>По убыванию</a>
+			</p>
+		</section>
+
+		<section class="catalog">
+			<h2 class="visually-hidden">Список гостиниц</h2>
+			<ul class="catalog-list">
+				<li class="catalog-item">
+					<a href="catalog-item.html">
+						<h3>Amara resort & spa</h3>
+					</a>
+					<p class="catalog-item-image">
+						<img src="img/catalog/1.jpg" width="220" height="165" alt="Amara resort & spa">
+					</p>
+					<p class="catalog-item-options">
+						<span>Гостиница</span>
+						<b>от 4000 р.</b>
+					</p>
+					<p class="catalog-item-buy">
+						<a href="catalog-item.html">Подробнее</a>
+						<a href="#" class="btn">Забронировать</a>
+					</p>
+					<p class="catalog-item-rating">Рейтинг: 8,5</p>
+				</li>
+				<li class="catalog-item">
+					<a href="catalog-item.html">
+						<h3>Desert Quail inn</h3>
+					</a>
+					<p class="catalog-item-image">
+						<img src="img/catalog/2.jpg" width="220" height="165" alt="Desert Quail inn">
+					</p>
+					<p class="catalog-item-options">
+						<span>Мотель</span>
+						<b>от 3000 р.</b>
+					</p>
+					<p class="catalog-item-buy">
+						<a href="catalog-item.html">Подробнее</a>
+						<a href="#" class="btn">Забронировать</a>
+					</p>
+					<p class="catalog-item-rating">Рейтинг: 8,9</p>
+				</li>
+				<li class="catalog-item">
+					<a href="catalog-item.html">
+						<h3>Villas at Poco diablo</h3>
+					</a>
+					<p class="catalog-item-image">
+						<img src="img/catalog/3.jpg" width="220" height="165" alt="Villas at Poco diablo">
+					</p>
+					<p class="catalog-item-options">
+						<span>Апартаменты</span>
+						<b>от 2000 р.</b>
+					</p>
+					<p class="catalog-item-buy">
+						<a href="catalog-item.html">Подробнее</a>
+						<a href="#" class="btn">Забронировать</a>
+					</p>
+					<p class="catalog-item-rating">Рейтинг: 9,2</p>
+				</li>
+			</ul>
+		</section>
+
+	</main>
+
+	<footer class="footer">
+		<p class="footer-main">
+			<a href="index.html">#visitsedona</a>
+		</p>
+		<ul class="footer-soshial">
+			<li>
+				<a href="#">Twitter</a>
+			</li>
+			<li>
+				<a href="#">Facebook</a>
+			</li>
+			<li>
+				<a href="#">YouTube</a>
+			</li>
+		</ul>
+		<p class="footer-studio">
+			<a href="#">
+				<img src="img/mylogo.png" width="200" height="150" alt="alt">
+			</a>
+		</p>
+	</footer>
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+
+</html>
